@@ -1,0 +1,301 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ROOT-STYLE */
+:root {
+  --body-color: black;
+  --taxt-color: #fff;
+  --nav-background: #fff;
+  --nav-bar-border: 8px;
+}
+
+/* BODY STYLING */
+body {
+  font-family: 'Rubik';
+  background-color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.nav_bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  background-color: var(--nav-background);
+  border-radius: var(--nav-bar-border);
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.left ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #a7bac5;
+  border-radius: 8px;
+}
+
+.right ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1px 0 0;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+.btn{
+    background: #FFFFFF;
+    /* UI/Action */
+    padding: 10px;
+    border: 1px solid #5A45F2;
+    border-radius: 8px;
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+
+
+/* Ink/05 Black */
+
+color: #000000;
+
+    
+}
+
+.btn1{
+    background: #5A45F2;
+border-radius: 8px;
+padding: 12px;
+color: #fff;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+}
+
+.btn2{
+    font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+}
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    .nav_bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        background-color: var(--nav-background);
+        border-radius: var(--nav-bar-border);
+        gap: 1rem;
+        padding: 0 2rem;
+      }
+   
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    .nav_bar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        background-color: var(--nav-background);
+        border-radius: var(--nav-bar-border);
+        gap: 1rem;
+        padding: 0 2rem;
+      }
+      .right ul {
+         display: block;
+        padding: 0 1px 0 0;
+        padding-inline-start: 0px;
+        line-height: 3;
+        text-align: center;
+    }
+
+    .left ul {
+        display: block;
+        text-align: center;
+        padding-inline-start: 0px;
+        line-height: 2;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .nav_bar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        background-color: var(--nav-background);
+        border-radius: var(--nav-bar-border);
+        gap: 1rem;
+        padding: 0 2rem;
+      }
+      .right ul {
+        display: block;
+        padding: 0 1px 0 0;
+        padding-inline-start: 0px;
+        line-height: 3;
+        text-align: center;
+    }
+
+    .left ul {
+        display: block;
+        text-align: center;
+        padding-inline-start: 0px;
+        line-height: 2;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    .nav_bar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        background-color: var(--nav-background);
+        border-radius: var(--nav-bar-border);
+        gap: 1rem;
+        padding: 0 2rem;
+      }
+
+      .right ul {
+       display: block;
+        padding: 0 1px 0 0;
+        padding-inline-start: 0px;
+        line-height: 3;
+        text-align: center;
+    }
+
+    .left ul {
+        display: block;
+        text-align: center;
+        padding-inline-start: 0px;
+        line-height: 2;
+    }
+
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    .nav_bar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        background-color: var(--nav-background);
+        border-radius: var(--nav-bar-border);
+        gap: 1rem;
+        padding: 0 2rem;
+      }
+
+      .right ul {
+         display: block; 
+        padding: 0 1px 0 0;
+        padding-inline-start: 0px;
+        line-height: 3;
+        text-align: center;
+    }
+
+    .left ul {
+        display: block;
+        text-align: center;
+        padding-inline-start: 0px;
+        line-height: 2;
+    }
+
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media  (max-width: 480px) {
+    
+    /* CSS */
+    .nav_bar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        background-color: var(--nav-background);
+        border-radius: var(--nav-bar-border);
+        gap: 1rem;
+        padding: 0 2rem;
+      }
+
+      .right ul {
+         display: block;
+        padding: 0 1px 0 0;
+        padding-inline-start: 0px;
+        line-height: 3;
+        text-align: center;
+    }
+
+    .left ul {
+        display: block;
+        text-align: center;
+        padding-inline-start: 0px;
+        line-height: 2;
+    }
+
+    
+  }
